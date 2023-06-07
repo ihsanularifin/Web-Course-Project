@@ -19,7 +19,52 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
- 
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+    .container{
+      display: grid;
+      width: 748px;
+      height: 748px;
+      background-color: black;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 23;
+      gap: 9px;
+    }
+    .red {
+      background-color: #E72F24;
+    }
+    .items{
+      background-color: #F0F1EC;
+    }
+    .white-1 {
+      grid-column: span 3;
+    }
+    .white-2 {
+      grid-row: span 2;
+    }
+    .white-3 {
+      grid-area: 2 / 2 / 4 /4
+    }
+    .blue {
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+    .white-4 {
+      grid-row: span 2;
+    }
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .black {
+      background-color: #232629;
+    }
   </style>
 </head>
 
